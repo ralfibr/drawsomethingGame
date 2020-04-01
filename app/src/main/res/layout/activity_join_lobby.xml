@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.joinLobby">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="138dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="1037dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMax"
+        android:layout_width="135dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="1037dp"
+        android:layout_marginBottom="72dp"
+        android:text="MaxUser"
+        app:layout_constraintBottom_toTopOf="@+id/textTotaal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textTotaal"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="1037dp"
+        android:layout_marginBottom="528dp"
+        android:text="TotalUser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="590dp"
+        android:layout_marginEnd="568dp"
+        android:layout_marginBottom="407dp"
+        android:text="Show Lobbies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/CreateSpeler"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="349dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="412dp"
+        android:text="Create Speler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/show"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

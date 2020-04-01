@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.drawsomething.activity.WoordenBeheren">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="542dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="48dp"
+        android:text="Woorden beheren"
+        android:textAlignment="center"
+        android:textColor="@color/colorButton"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/woordenlijst"
+        android:layout_width="231dp"
+        android:layout_height="360dp"
+        android:scrollbars="vertical"
+        android:text="Woorden"
+        android:textAlignment="textStart"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/verwijderenWoorden"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="300dp"
+        android:background="@color/colorButton"
+        android:text="Woord Verwijderen"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textwoord" />
+
+    <Button
+        android:id="@+id/toevoegen"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorButton"
+        android:text="Woord Toevoegen"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textwoord" />
+
+    <EditText
+        android:id="@+id/textwoord"
+        android:layout_width="347dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="432dp"
+        android:layout_marginEnd="396dp"
+        android:layout_marginBottom="172dp"
+        android:ems="10"
+        android:hint="Woord"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

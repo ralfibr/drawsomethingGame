@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guess_word_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/ronde_display"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aantal_seconden"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/woorden_raden_title"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="236dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:text="@string/woorden_raden_title"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scorelijst_title" />
+
+    <TextView
+        android:id="@+id/scorelijst_title"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="168dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:text="@string/scorelijst_title"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vertical_separator"
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/woord1"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="140dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/woord2"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="140dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/woord3"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="140dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/woord4"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="140dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/woord5"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/woord1" />
+
+    <Button
+        android:id="@+id/woord9"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/woord5" />
+
+    <Button
+        android:id="@+id/woord13"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/woord9" />
+
+    <Button
+        android:id="@+id/woord14"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord13"
+        app:layout_constraintTop_toBottomOf="@+id/woord10" />
+
+    <Button
+        android:id="@+id/woord15"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord14"
+        app:layout_constraintTop_toBottomOf="@+id/woord11" />
+
+    <Button
+        android:id="@+id/woord16"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord15"
+        app:layout_constraintTop_toBottomOf="@+id/woord12" />
+
+    <Button
+        android:id="@+id/woord10"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord9"
+        app:layout_constraintTop_toBottomOf="@+id/woord6" />
+
+    <Button
+        android:id="@+id/woord11"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord10"
+        app:layout_constraintTop_toBottomOf="@+id/woord7" />
+
+    <Button
+        android:id="@+id/woord12"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord11"
+        app:layout_constraintTop_toBottomOf="@+id/woord8" />
+
+    <Button
+        android:id="@+id/woord6"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord5"
+        app:layout_constraintTop_toBottomOf="@+id/woord2" />
+
+    <Button
+        android:id="@+id/woord7"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord6"
+        app:layout_constraintTop_toBottomOf="@+id/woord3" />
+
+    <Button
+        android:id="@+id/woord8"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorButton"
+        android:text="@string/default_woord"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/woord7"
+        app:layout_constraintTop_toBottomOf="@+id/woord4" />
+
+    <TextView
+        android:id="@+id/scorelijst_namen"
+        android:layout_width="176dp"
+        android:layout_height="502dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="116dp"
+        android:textAlignment="textStart"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="750"
+        tools:layout_conversion_wrapWidth="1538" />
+
+    <TextView
+        android:id="@+id/scorelijst_scores"
+        android:layout_width="32dp"
+        android:layout_height="502dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="84dp"
+        android:textAlignment="textStart"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="750"
+        tools:layout_conversion_wrapWidth="1538" />
+
+    <TextView
+        android:id="@+id/raden_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="28dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/woord13"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <View
+        android:id="@+id/transparent_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="740dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/transparent_overlay"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/einde_ronde_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="11dp"
+        android:text="@string/einde_ronde_title"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transparent_overlay" />
+
+    <TextView
+        android:id="@+id/einde_ronde_status"
+        android:layout_width="622dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="11dp"
+        android:text="@string/einde_ronde_status"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transparent_overlay" />
+
+    <TextView
+        android:id="@+id/einde_ronde_woord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="11dp"
+        android:text="@string/einde_ronde_woord"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/einde_ronde_title" />
+
+    <TextView
+        android:id="@+id/begin_ronde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="11dp"
+        android:text="@string/begin_ronde"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transparent_overlay"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/einde_ronde_scorelijst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="11dp"
+        android:text="@string/scorelijst_title"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/einde_ronde_woord" />
+
+    <TextView
+        android:id="@+id/einde_scorelijst_namen"
+        android:layout_width="176dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="524dp"
+        android:layout_marginTop="336dp"
+        android:elevation="11dp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="750"
+        tools:layout_conversion_wrapWidth="1538" />
+
+    <TextView
+        android:id="@+id/einde_scorelijst_scores"
+        android:layout_width="32dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="548dp"
+        android:elevation="11dp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="750"
+        tools:layout_conversion_wrapWidth="1538" />
+
+    <TextView
+        android:id="@+id/einde_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="11dp"
+        android:text="@string/einde_game"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transparent_overlay"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/win_overlay_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="64dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:elevation="11dp"-->
+    <!--android:text="TextView"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="28sp"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/win_overlay"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/win_overlay" />-->
+
+</android.support.constraint.ConstraintLayout>

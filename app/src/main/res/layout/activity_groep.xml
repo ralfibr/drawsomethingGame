@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Groep">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="240dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="312dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/delete"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSpeler"
+        tools:layout_conversion_wrapHeight="218"
+        tools:layout_conversion_wrapWidth="476" />
+
+    <Button
+        android:id="@+id/bgn"
+        android:layout_width="240dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/begin_button"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSpeler"
+        tools:layout_conversion_wrapHeight="148"
+        tools:layout_conversion_wrapWidth="444" />
+
+    <TextView
+        android:id="@+id/spelerlijst"
+        android:layout_width="534dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="184dp"
+        android:text="@string/spelerlijst"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/groep_title2"
+        android:layout_width="534dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/groep_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorButton"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSpeler"
+        android:layout_width="756dp"
+        android:layout_height="251dp"
+        android:layout_marginStart="260dp"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spelerlijst"
+        tools:layout_conversion_wrapHeight="750"
+        tools:layout_conversion_wrapWidth="1538" />
+
+</android.support.constraint.ConstraintLayout>

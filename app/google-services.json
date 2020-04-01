@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "236704995720",
+    "firebase_url": "https://amsta-60cb6.firebaseio.com",
+    "project_id": "amsta-60cb6",
+    "storage_bucket": "amsta-60cb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236704995720:android:a23b9c2aff9460d8",
+        "android_client_info": {
+          "package_name": "com.team13.drawsomething"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236704995720-cehukdrlsqk448nq1ata43de5qdp0otk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.team13.drawsomething",
+            "certificate_hash": "c9866fdd309f1b3511bccc7179a216ff8d6f6aaa"
+          }
+        },
+        {
+          "client_id": "236704995720-qb03q2tdshuolo24m1l6g331pcr9pot9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.team13.drawsomething",
+            "certificate_hash": "660e58d44828bd055e5a2eac848570f36405d41d"
+          }
+        },
+        {
+          "client_id": "236704995720-01f0aj61m50om7utbvs3r1b5hv9u4eom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUsHKH5cTiPt7SekVDTT0eLYOYz4AbQUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236704995720-01f0aj61m50om7utbvs3r1b5hv9u4eom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

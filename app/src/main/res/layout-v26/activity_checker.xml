@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.drawsomething.activity.WoordenKiezer">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <Button
+        android:id="@+id/woord_kiezen1"
+        android:layout_width="200dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/colorButton"
+        android:text="@string/Woord1"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/woord_kiezen2"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="328dp"
+        android:background="@color/colorButton"
+        android:text="@string/Woord2"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toEndOf="@+id/woord_kiezen1"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/woord_kiezen3"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorButton"
+        android:text="@string/Woord3"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/woord_kiezen1"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <Button
+        android:id="@+id/woord_kiezen4"
+        android:layout_width="200dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorButton"
+        android:text="@string/Woord4"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toEndOf="@+id/woord_kiezen3"
+        app:layout_constraintTop_toBottomOf="@+id/woord_kiezen2"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="562dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:text="@string/Kies_een_woord"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <View
+        android:id="@+id/transparent_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="740dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/transparent_overlay"
+        android:elevation="2dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/woord_gekozen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="11dp"
+        android:text="@string/woord_gekozen"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transparent_overlay"
+        app:layout_constraintVertical_bias="0.471" />
+
+    <TextView
+        android:id="@+id/keuze_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="11dp"
+        android:text="@string/keuze_title"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transparent_overlay"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <Button
+        android:id="@+id/tablet_button"
+        android:layout_width="240dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/colorButton"
+        android:elevation="11dp"
+        android:text="@string/tablet_button"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/transparent_overlay"
+        app:layout_constraintTop_toBottomOf="@+id/keuze_title" />
+
+    <Button
+        android:id="@+id/kinect_button"
+        android:layout_width="240dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="332dp"
+        android:background="@color/colorButton"
+        android:elevation="11dp"
+        android:text="@string/kinect_button"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/transparent_overlay"
+        app:layout_constraintTop_toBottomOf="@+id/keuze_title" />
+
+</android.support.constraint.ConstraintLayout>

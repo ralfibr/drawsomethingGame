@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/drawingBackground"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/undo_button"
+        android:layout_width="210dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorButton"
+        android:tag="undo_button"
+        android:text="Ongedaan maken"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:title="Undo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAsAction="never" />
+
+    <Button
+        android:id="@+id/redo_button"
+        android:layout_width="210dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorButton"
+        android:tag="redo_button"
+        android:text="Opnieuw doen"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:title="Redo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/undo_button"
+        app:showAsAction="never" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="210dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorButton"
+        android:tag="save_button"
+        android:text="Opslaan"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:title="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redo_button"
+        app:showAsAction="never" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="210dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorButton"
+        android:tag="clear_button"
+        android:text="Leegmaken"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:title="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_button"
+        app:showAsAction="never" />
+
+    <Button
+        android:id="@+id/change_color_button"
+        android:layout_width="210dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorButton"
+        android:tag="change_color_button"
+        android:text="Kleur kiezen"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:title="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear_button"
+        app:showAsAction="never" />
+
+    <com.example.drawsomething.activity.PaintView
+        android:id="@+id/paintView"
+        android:layout_width="1026dp"
+        android:layout_height="614dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="226dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorButton"
+        android:tag="done_button"
+        android:text="Klaar met tekenen"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paintView"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="991dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paintView"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <TextView
+        android:id="@+id/current_pen_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="440dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Lijn dikte:"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
